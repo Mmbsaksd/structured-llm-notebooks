@@ -168,7 +168,7 @@ def get_dspy_lm(provider: str | None = None):
         return dspy.LM(f"groq/{get_model('groq')}", api_key=require_api_key("groq"))
     if provider == "azureopenai":
         return dspy.LM(
-            f"openai/{get_model('azureopenai')}",
+            f"azure/{get_model('azureopenai')}",
             api_key=require_api_key("azureopenai"),
             api_base=AZURE_OPENAI_ENDPOINT,
             api_version=AZURE_OPENAI_API_VERSION,
