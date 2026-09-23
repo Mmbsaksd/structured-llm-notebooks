@@ -1,0 +1,51 @@
+{
+  "generate.predict": {
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "question": "What is Attention?",
+        "reasoning": "Attention is a mechanism in machine learning, especially in natural language processing, that allows models to focus on specific parts of the input sequence when making predictions, enhancing performance by weighing the importance of different tokens.",
+        "answer": "Attention is a mechanism that enables models to focus on specific parts of the input data when processing sequences."
+      },
+      {
+        "question": "What is DSPy?",
+        "answer": "DSPy is a framework for programming language models."
+      },
+      {
+        "question": "What is DSPy?",
+        "answer": "DSPy is a framework for programming language models."
+      },
+      {
+        "question": "What is Vector DB?",
+        "answer": "Vector databases store embeddings for similarity search."
+      }
+    ],
+    "signature": {
+      "instructions": "Provide a clear and concise answer to the question, including a logical reasoning statement that supports your response. Ensure that the reasoning helps contextualize the answer, making it easier for the user to understand the concept being queried.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Reasoning:",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Answer:",
+          "description": "${answer}"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.12",
+      "dspy": "3.3.1",
+      "cloudpickle": "3.1"
+    }
+  }
+}
